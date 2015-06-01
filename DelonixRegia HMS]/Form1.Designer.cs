@@ -73,12 +73,13 @@
             this.label26 = new System.Windows.Forms.Label();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.btnViewStaff = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.btnRetrieveH = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.label14 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.lblSA = new System.Windows.Forms.Label();
+            this.lblCO = new System.Windows.Forms.Label();
+            this.lblPostal = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblPN = new System.Windows.Forms.Label();
+            this.lblLN = new System.Windows.Forms.Label();
+            this.lblFN = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -86,13 +87,12 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.lblFN = new System.Windows.Forms.Label();
-            this.lblLN = new System.Windows.Forms.Label();
-            this.lblPN = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblPostal = new System.Windows.Forms.Label();
-            this.lblCO = new System.Windows.Forms.Label();
-            this.lblSA = new System.Windows.Forms.Label();
+            this.btnViewStaff = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnRetrieveH = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -346,6 +346,7 @@
             // tbxRoomNumber
             // 
             this.tbxRoomNumber.Location = new System.Drawing.Point(645, 144);
+            this.tbxRoomNumber.Multiline = true;
             this.tbxRoomNumber.Name = "tbxRoomNumber";
             this.tbxRoomNumber.Size = new System.Drawing.Size(100, 20);
             this.tbxRoomNumber.TabIndex = 20;
@@ -576,60 +577,61 @@
             this.tabPage3.Text = "Housekeeping";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // btnViewStaff
+            // lblSA
             // 
-            this.btnViewStaff.Location = new System.Drawing.Point(358, 21);
-            this.btnViewStaff.Name = "btnViewStaff";
-            this.btnViewStaff.Size = new System.Drawing.Size(122, 23);
-            this.btnViewStaff.TabIndex = 70;
-            this.btnViewStaff.Text = "View Staff Details";
-            this.btnViewStaff.UseVisualStyleBackColor = true;
-            this.btnViewStaff.Visible = false;
+            this.lblSA.AutoSize = true;
+            this.lblSA.Location = new System.Drawing.Point(946, 200);
+            this.lblSA.Name = "lblSA";
+            this.lblSA.Size = new System.Drawing.Size(0, 13);
+            this.lblSA.TabIndex = 90;
             // 
-            // textBox4
+            // lblCO
             // 
-            this.textBox4.Location = new System.Drawing.Point(59, 21);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(134, 20);
-            this.textBox4.TabIndex = 69;
+            this.lblCO.AutoSize = true;
+            this.lblCO.Location = new System.Drawing.Point(928, 172);
+            this.lblCO.Name = "lblCO";
+            this.lblCO.Size = new System.Drawing.Size(0, 13);
+            this.lblCO.TabIndex = 89;
             // 
-            // btnRetrieveH
+            // lblPostal
             // 
-            this.btnRetrieveH.Location = new System.Drawing.Point(213, 21);
-            this.btnRetrieveH.Name = "btnRetrieveH";
-            this.btnRetrieveH.Size = new System.Drawing.Size(122, 23);
-            this.btnRetrieveH.TabIndex = 68;
-            this.btnRetrieveH.Text = "Retrieve Records";
-            this.btnRetrieveH.UseVisualStyleBackColor = true;
-            this.btnRetrieveH.Click += new System.EventHandler(this.btnRetrieveH_Click);
+            this.lblPostal.AutoSize = true;
+            this.lblPostal.Location = new System.Drawing.Point(928, 142);
+            this.lblPostal.Name = "lblPostal";
+            this.lblPostal.Size = new System.Drawing.Size(0, 13);
+            this.lblPostal.TabIndex = 88;
             // 
-            // dataGridView3
+            // lblEmail
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(21, 75);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(543, 271);
-            this.dataGridView3.TabIndex = 65;
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(700, 231);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(0, 13);
+            this.lblEmail.TabIndex = 87;
             // 
-            // label14
+            // lblPN
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(15, 24);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(49, 13);
-            this.label14.TabIndex = 63;
-            this.label14.Text = "Staff ID: ";
+            this.lblPN.AutoSize = true;
+            this.lblPN.Location = new System.Drawing.Point(700, 203);
+            this.lblPN.Name = "lblPN";
+            this.lblPN.Size = new System.Drawing.Size(0, 13);
+            this.lblPN.TabIndex = 86;
             // 
-            // tabPage4
+            // lblLN
             // 
-            this.tabPage4.Controls.Add(this.tabControl3);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1060, 446);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Report";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.lblLN.AutoSize = true;
+            this.lblLN.Location = new System.Drawing.Point(700, 172);
+            this.lblLN.Name = "lblLN";
+            this.lblLN.Size = new System.Drawing.Size(0, 13);
+            this.lblLN.TabIndex = 85;
+            // 
+            // lblFN
+            // 
+            this.lblFN.AutoSize = true;
+            this.lblFN.Location = new System.Drawing.Point(700, 138);
+            this.lblFN.Name = "lblFN";
+            this.lblFN.Size = new System.Drawing.Size(0, 13);
+            this.lblFN.TabIndex = 84;
             // 
             // label13
             // 
@@ -701,61 +703,60 @@
             this.label23.TabIndex = 72;
             this.label23.Text = "Email:";
             // 
-            // lblFN
+            // btnViewStaff
             // 
-            this.lblFN.AutoSize = true;
-            this.lblFN.Location = new System.Drawing.Point(700, 138);
-            this.lblFN.Name = "lblFN";
-            this.lblFN.Size = new System.Drawing.Size(0, 13);
-            this.lblFN.TabIndex = 84;
+            this.btnViewStaff.Location = new System.Drawing.Point(358, 21);
+            this.btnViewStaff.Name = "btnViewStaff";
+            this.btnViewStaff.Size = new System.Drawing.Size(122, 23);
+            this.btnViewStaff.TabIndex = 70;
+            this.btnViewStaff.Text = "View Staff Details";
+            this.btnViewStaff.UseVisualStyleBackColor = true;
+            this.btnViewStaff.Visible = false;
             // 
-            // lblLN
+            // textBox4
             // 
-            this.lblLN.AutoSize = true;
-            this.lblLN.Location = new System.Drawing.Point(700, 172);
-            this.lblLN.Name = "lblLN";
-            this.lblLN.Size = new System.Drawing.Size(0, 13);
-            this.lblLN.TabIndex = 85;
+            this.textBox4.Location = new System.Drawing.Point(59, 21);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(134, 20);
+            this.textBox4.TabIndex = 69;
             // 
-            // lblPN
+            // btnRetrieveH
             // 
-            this.lblPN.AutoSize = true;
-            this.lblPN.Location = new System.Drawing.Point(700, 203);
-            this.lblPN.Name = "lblPN";
-            this.lblPN.Size = new System.Drawing.Size(0, 13);
-            this.lblPN.TabIndex = 86;
+            this.btnRetrieveH.Location = new System.Drawing.Point(213, 21);
+            this.btnRetrieveH.Name = "btnRetrieveH";
+            this.btnRetrieveH.Size = new System.Drawing.Size(122, 23);
+            this.btnRetrieveH.TabIndex = 68;
+            this.btnRetrieveH.Text = "Retrieve Records";
+            this.btnRetrieveH.UseVisualStyleBackColor = true;
+            this.btnRetrieveH.Click += new System.EventHandler(this.btnRetrieveH_Click);
             // 
-            // lblEmail
+            // dataGridView3
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(700, 231);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(0, 13);
-            this.lblEmail.TabIndex = 87;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(21, 75);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(543, 271);
+            this.dataGridView3.TabIndex = 65;
             // 
-            // lblPostal
+            // label14
             // 
-            this.lblPostal.AutoSize = true;
-            this.lblPostal.Location = new System.Drawing.Point(928, 142);
-            this.lblPostal.Name = "lblPostal";
-            this.lblPostal.Size = new System.Drawing.Size(0, 13);
-            this.lblPostal.TabIndex = 88;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(15, 24);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(49, 13);
+            this.label14.TabIndex = 63;
+            this.label14.Text = "Staff ID: ";
             // 
-            // lblCO
+            // tabPage4
             // 
-            this.lblCO.AutoSize = true;
-            this.lblCO.Location = new System.Drawing.Point(928, 172);
-            this.lblCO.Name = "lblCO";
-            this.lblCO.Size = new System.Drawing.Size(0, 13);
-            this.lblCO.TabIndex = 89;
-            // 
-            // lblSA
-            // 
-            this.lblSA.AutoSize = true;
-            this.lblSA.Location = new System.Drawing.Point(946, 200);
-            this.lblSA.Name = "lblSA";
-            this.lblSA.Size = new System.Drawing.Size(0, 13);
-            this.lblSA.TabIndex = 90;
+            this.tabPage4.Controls.Add(this.tabControl3);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1060, 446);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Report";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabControl3
             // 
