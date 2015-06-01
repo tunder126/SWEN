@@ -10,3 +10,6 @@ C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS]\DelonixRegia HMS]\obj\Debug\D
 C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].exe.config
 C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].exe
 C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].pdb
+C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].exe.config
+C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].exe
+C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].pdb
