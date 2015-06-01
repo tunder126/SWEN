@@ -11,7 +11,7 @@ namespace DelonixRegia_HMS_.Class
     class DbManager
     {
         //#1 Method insertCustomer
-        public static int insertCustomer(string firstName)
+        public static int insertCustomer(string RoomNumber, string firstName, string lastName, string PhoneNum, string Email, string streetAdd, string postalCode, string countryofOrigin)
         {
             int rowsinserted = 0;
 
@@ -19,13 +19,18 @@ namespace DelonixRegia_HMS_.Class
             try
             {
                 conn = new SqlConnection();
-                conn.ConnectionString = ConfigurationManager.ConnectionStrings["EWDTdbConnectionString"].ConnectionString;
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
                 conn.Open();
                 SqlCommand comm = new SqlCommand();
                 comm.Connection = conn;
-                comm.CommandText = "INSERT INTO [Customer](F_Name) VALUES (@firstName)";
+                comm.CommandText = "INSERT INTO [Customer](F_Name, L_Name, Phone_No, Email, Street_Add, Postal_Code, Country_Origin) ( VALUES (@firstName, @lastName, @PhoneNum, @Email, @streetAddress, @postalCode, @countryofOrigin)";
+                comm.Parameters.AddWithValue("@lastname", lastName);              
                 comm.Parameters.AddWithValue("@firstname", firstName);
-
+                comm.Parameters.AddWithValue("@phonenumber", PhoneNum);
+                comm.Parameters.AddWithValue("@email", Email);
+                comm.Parameters.AddWithValue("@streetAddress", streetAdd);
+                comm.Parameters.AddWithValue("@postalcode", postalCode);
+                comm.Parameters.AddWithValue("@countryoforigin", countryofOrigin);
                 rowsinserted = comm.ExecuteNonQuery();
             }
             catch (SqlException e)
@@ -38,5 +43,6 @@ namespace DelonixRegia_HMS_.Class
         //#2 Method insertBooking
 
         //#3 Method updateRoomInformationTable
-    }
 }
+}
+

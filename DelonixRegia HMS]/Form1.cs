@@ -77,11 +77,19 @@ namespace DelonixRegia_HMS_
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             //Store the variables
+            string RoomNum = tbxRoomNumber.Text;
+            string FirstN = tbxFN.Text;
+            string LastN = tbxLN.Text;
+            string PhoneNum = tbxPN.Text;
+            string Email = tbxEmail.Text;
+            string PostalCode = tbxPostal.Text;
+            string CountryofOrigin = tbxCountry.Text;
+            string streetAdddr = tbxStreet.Text;
 
             //Call #3 method from the DBManager.
 
             //#1 Method insertCustomer
-            int rowsInserted = DbManager.insertCustomer("");
+            int rowsInserted = DbManager.insertCustomer(RoomNum, FirstN, LastN, PhoneNum, Email, streetAdddr, PostalCode, CountryofOrigin);
             //#2 Method insertBooking
 
             //#3 Method updateRoomInformationTable
