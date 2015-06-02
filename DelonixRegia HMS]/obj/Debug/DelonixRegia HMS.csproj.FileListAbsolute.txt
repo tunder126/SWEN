@@ -18,3 +18,9 @@ C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\bin\Debug\Delon
 C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia_HMS_.Form1.resources
 C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia_HMS_.Properties.Resources.resources
 C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\SWEN-master\SWEN-master\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].exe.config
+C:\Users\user\Desktop\SWEN-master\SWEN-master\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].exe
+C:\Users\user\Desktop\SWEN-master\SWEN-master\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].pdb
+C:\Users\user\Documents\GitHub\SWEN\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].exe.config
+C:\Users\user\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].exe
+C:\Users\user\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].pdb

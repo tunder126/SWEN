@@ -39,6 +39,8 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tbxRT = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.tbxStreet = new System.Windows.Forms.TextBox();
             this.tbxCountry = new System.Windows.Forms.TextBox();
@@ -120,7 +122,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(13, 13);
+            this.tabControl1.Location = new System.Drawing.Point(12, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1068, 472);
@@ -220,6 +222,8 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.tbxRT);
+            this.tabPage5.Controls.Add(this.label24);
             this.tabPage5.Controls.Add(this.btnSubmit);
             this.tabPage5.Controls.Add(this.tbxStreet);
             this.tabPage5.Controls.Add(this.tbxCountry);
@@ -252,6 +256,25 @@
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Check - In";
             this.tabPage5.UseVisualStyleBackColor = true;
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // tbxRT
+            // 
+            this.tbxRT.Location = new System.Drawing.Point(647, 144);
+            this.tbxRT.Multiline = true;
+            this.tbxRT.Name = "tbxRT";
+            this.tbxRT.Size = new System.Drawing.Size(100, 20);
+            this.tbxRT.TabIndex = 37;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label24.Location = new System.Drawing.Point(556, 146);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(81, 17);
+            this.label24.TabIndex = 36;
+            this.label24.Text = "Room Type";
             // 
             // btnSubmit
             // 
@@ -345,7 +368,7 @@
             // 
             // tbxRoomNumber
             // 
-            this.tbxRoomNumber.Location = new System.Drawing.Point(645, 144);
+            this.tbxRoomNumber.Location = new System.Drawing.Point(647, 111);
             this.tbxRoomNumber.Multiline = true;
             this.tbxRoomNumber.Name = "tbxRoomNumber";
             this.tbxRoomNumber.Size = new System.Drawing.Size(100, 20);
@@ -403,7 +426,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label7.Location = new System.Drawing.Point(534, 145);
+            this.label7.Location = new System.Drawing.Point(534, 111);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 17);
             this.label7.TabIndex = 7;
@@ -934,6 +957,8 @@
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.TabPage tabPage11;
         private System.Windows.Forms.TabPage tabPage12;
+        private System.Windows.Forms.TextBox tbxRT;
+        private System.Windows.Forms.Label label24;
     }
 }
 
